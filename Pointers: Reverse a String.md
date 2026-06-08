@@ -1,5 +1,8 @@
 # Pointers: Reverse a String Using Pointers in C
 
+### Name: GOMATHY G
+### Reg No: 212223250002
+
 ## 🎯 Aim
 
 To write a C program that prints a string in reverse using a pointer.
@@ -14,8 +17,30 @@ To write a C program that prints a string in reverse using a pointer.
 3. **Output**: Display the reversed string.
 
 ## Program
-Add Code here
+```
+#include <stdio.h>
 
+int main() {
+    char str[100];
+    char *ptr;
+    printf("Enter a string: ");
+    scanf("%s", str);
+    ptr = str;
+    while(*ptr != '\0') {
+        ptr++;
+    }
+    ptr--;
+    printf("Reversed string: ");
+    while(ptr >= str) {
+        printf("%c", *ptr);
+        ptr--;
+    }
+
+    return 0;
+}
+```
 ## Output
+<img width="441" height="264" alt="image" src="https://github.com/user-attachments/assets/a443e4b4-41ea-458f-bd7a-d71fce524201" />
 
 ## Result
+ a C program that prints a string in reverse using a pointer is written.
